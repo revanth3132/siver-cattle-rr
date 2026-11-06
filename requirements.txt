@@ -1,0 +1,16 @@
+# make_tables.py needs only these two
+numpy>=1.23
+scipy>=1.9
+
+# the other scripts load the pickled models and additionally need
+scikit-learn>=1.5
+
+# The models are pickled scikit-learn estimators, fitted with scikit-learn 1.7.2,
+# numpy 2.2.6, scipy 1.15.3 on python 3.10.19. Install into a fresh environment.
+# scikit-learn below 1.4 cannot run under numpy 2 and will raise an ImportError from
+# inside numpy; versions far from 1.7 may fail to unpickle the estimators.
+# make_tables.py is unaffected either way.
+
+# pipeline/ additionally requires:
+# opencv-python>=4.7
+# ultralytics>=8.1

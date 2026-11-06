@@ -1,0 +1,6 @@
+__pycache__/
+*.pyc
+tables/
+
+# by-product of running run_protocol.py
+data/run_correlations_refit.pkl
